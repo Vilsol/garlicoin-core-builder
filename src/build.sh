@@ -8,7 +8,7 @@ mkdir -p /output/linux_x86/
 echo "Configuring build"
 pushd /garlicoin
 ./autogen.sh
-./configure --with-gui=no --disable-tests --disable-gui-tests
+./configure --with-gui=no --disable-tests --disable-gui-tests --disable-shared --enable-cxx
 
 echo "Starting compile"
 make clean
