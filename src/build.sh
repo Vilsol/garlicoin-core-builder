@@ -12,7 +12,7 @@ pushd /garlicoin
 
 echo "Starting compile"
 make clean
-make
+make -j2
 
 cp /garlicoin/src/garlicoind /output/linux_x86/
 cp /garlicoin/src/garlicoin-cli /output/linux_x86/
